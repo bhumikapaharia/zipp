@@ -17,7 +17,7 @@ matrix:
 
 
 install:
-    - apt-get update && apt-get install python3-setuptools
+    - sudo apt-get update && sudo apt-get install python3-setuptools
     - pip3 install jaraco.classes
     - pip3 install jaraco.itertools
     - pip3 install func_timeout
