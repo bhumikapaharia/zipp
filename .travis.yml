@@ -24,4 +24,5 @@ install:
     - python setup.py install
 script:
     - uname -m
+    - rm -rf .tox
     - tox -e py36
