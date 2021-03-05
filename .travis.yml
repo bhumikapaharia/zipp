@@ -9,13 +9,14 @@ matrix:
           language: python
           python: "3.6"
 
-        - os: linux
-          dist: focal
-          arch: amd64
-          language: python
-          python: "3.6"
+        #- os: linux
+        #  dist: focal
+        #  arch: amd64
+        #  language: python
+        #  python: "3.6"
 install:
     - sudo apt-get update && sudo apt-get install python3-setuptools
+    - sudo apt-get install -y python-devel python2-pip python-virtualenv
     - python3.6 -m pip install --upgrade pip
     - pip3 install jaraco.classes
     - pip3 install jaraco.itertools
