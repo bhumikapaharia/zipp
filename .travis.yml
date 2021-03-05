@@ -15,7 +15,7 @@ matrix:
         #  language: python
         #  python: "3.6"
 install:
-    - sudo apt-get update && sudo apt-get install python3-setuptools python3.6-dev python3-pip python3-virtualenv
+    - sudo apt-get update && sudo apt-get install python3.6-dev python3-pip python3-virtualenv python3-setuptools
     - python3.6 -m pip install --upgrade pip
     - pip3 install jaraco.classes
     - pip3 install jaraco.itertools
