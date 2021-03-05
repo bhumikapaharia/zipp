@@ -1,0 +1,27 @@
+language: generic
+
+matrix:
+
+    include: 
+        - os: linux
+          dist: focal
+          arch: arm64-graviton2
+          language: python
+          python: "3.6"
+
+        - os: linux
+          dist: trusty
+          arch: amd64
+          language: python
+          python: "3.6"
+
+
+install:
+    - python setup.py install
+    - apt-get install python3-setuptools
+    - pip3 install jaraco.classes
+    - pip3 install jaraco.itertools
+    - pip3 install func_timeout
+
+script:
+    - tox -e py36
