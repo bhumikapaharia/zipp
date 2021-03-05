@@ -19,12 +19,13 @@ matrix:
 
 
 install:
-    - sudo apt-get update && sudo apt-get install python3-setuptools
+    - apt-get update && apt-get install python3-setuptools
     - pip3 install jaraco.classes
     - pip3 install jaraco.itertools
     - pip3 install func_timeout
-    - sudo apt install tox
+    - apt install tox
     - python setup.py install
 
 script:
+    - uname -m
     - tox -e py36
