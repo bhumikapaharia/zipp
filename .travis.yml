@@ -4,7 +4,7 @@ matrix:
         - os: linux
           dist: focal
           arch: arm64-graviton2
-          virt: lxd
+          virt: vm
           group: edge
           language: python
           python: "3.6"
